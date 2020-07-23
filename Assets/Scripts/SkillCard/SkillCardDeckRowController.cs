@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Player;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 namespace SkillCard
@@ -9,6 +10,15 @@ namespace SkillCard
 
         SkillCardDeckRowModel model = new SkillCardDeckRowModel();
 
+        public List<SkillCardModel> drawSkillSet(Character character) {
+            List<SkillCardModel> skillSet = new List<SkillCardModel>();
+            skillSet.AddRange(drawCards(Type.YELLOW, character.getSkillCardAmount(Type.YELLOW)));
+            skillSet.AddRange(drawCards(Type.GREEN, character.getSkillCardAmount(Type.GREEN)));
+            skillSet.AddRange(drawCards(Type.PURPLE, character.getSkillCardAmount(Type.PURPLE)));
+            skillSet.AddRange(drawCards(Type.BLUE, character.getSkillCardAmount(Type.BLUE)));
+            skillSet.AddRange(drawCards(Type.RED, character.getSkillCardAmount(Type.RED)));
+            return skillSet;
+        }
 
         public List<SkillCardModel> drawCards(Type type, int amount) {
             List < SkillCardModel > result = model.drawCards(type, amount);

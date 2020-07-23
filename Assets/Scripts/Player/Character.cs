@@ -1,20 +1,16 @@
-﻿using System.Collections;
+﻿using SkillCard;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 namespace Player
 {
-    public class Character : MonoBehaviour
+    public class Character 
     {
-        // Start is called before the first frame update
-        void Start()
-        {
 
-        }
+        SkillSet skillSet = SkillSet.getHelo();
 
-        // Update is called once per frame
-        void Update()
-        {
-
+        public int getSkillCardAmount(Type type) {
+            return skillSet.getSkillTypeAmount(type);
         }
     }
 }

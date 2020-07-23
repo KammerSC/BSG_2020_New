@@ -7,6 +7,7 @@ namespace Player{
     public class PlayerController : MonoBehaviour{
 
         public PlayerView view;
+        PlayerModel model = new PlayerModel();
 
         public void displayCard(List<SkillCardModel> cards){
             view.addToHand(cards);
@@ -18,6 +19,10 @@ namespace Player{
 
         public List<SkillCardModel> getDestroyedCards(){
             return view.destroyCards();
+        }
+
+        public Character GetCharacter() {
+            return model.GetCharacter();
         }
 
         // Start is called before the first frame update

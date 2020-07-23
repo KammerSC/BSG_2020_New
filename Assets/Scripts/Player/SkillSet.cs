@@ -23,7 +23,7 @@ namespace Player
             return HELO;
         }
 
-        public int getSkilltypeAmount(SkillCard.Type type) {
+        public int getSkillTypeAmount(SkillCard.Type type) {
             return skillset[type];
         }
 

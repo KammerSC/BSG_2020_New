@@ -42,11 +42,10 @@ namespace SkillCheck{
             view.setStateDescAndTitle(model.getCurrentState());
         }
 
-        private void drawDestiny()
-        {
+        private void drawDestiny(){
             crisisController.AddToPile(rowController.drawDestiny());
             view.setStateDescAndTitle(model.getCurrentState());
-            playerController.displayCard(rowController.drawCards(SkillCard.Type.GREEN, 2));
+            playerController.displayCard(rowController.drawSkillSet(playerController.GetCharacter()));
         }
 
         private void addToPile()

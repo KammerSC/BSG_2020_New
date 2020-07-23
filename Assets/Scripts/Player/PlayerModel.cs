@@ -6,18 +6,10 @@ namespace Player
 {
     public class PlayerModel
     {
+        Character character = new Character();
 
-
-        // Start is called before the first frame update
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
+        public Character GetCharacter() {
+            return character;
         }
     }
 }
