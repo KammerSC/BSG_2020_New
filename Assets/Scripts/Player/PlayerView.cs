@@ -44,7 +44,7 @@ namespace Player
             return cards;
         }
 
-        //itt kerül be egy null
+        
         public List<SkillCardModel> getSelectedCards(){
             List<SkillCardModel> cards = new List<SkillCardModel>();
             List<GameObject> tmp = new List<GameObject>();

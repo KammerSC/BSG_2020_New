@@ -67,9 +67,11 @@
     <Compile Include="Assets\Scripts\CrisisCard\CrisisCardModel.cs" />
     <Compile Include="Assets\Scripts\CrisisCard\CrisisCardType.cs" />
     <Compile Include="Assets\Scripts\CrisisCard\CrisisCardView.cs" />
+    <Compile Include="Assets\Scripts\Player\Character.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerModel.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerView.cs" />
+    <Compile Include="Assets\Scripts\Player\SkillSet.cs" />
     <Compile Include="Assets\Scripts\SkillCard\SkillCardController.cs" />
     <Compile Include="Assets\Scripts\SkillCard\SkillCardDeck.cs" />
     <Compile Include="Assets\Scripts\SkillCard\SkillCardDeckRowController.cs" />
